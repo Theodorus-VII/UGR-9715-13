@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+    <script src="./homepage.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="header__homeButton header__homeButton--hover">GAMING-HAVEN.NET</a>
+        <form role="search" method="GET" class="header__search"  >
+            <!-- <label for="search-form">search for: </label> -->
+            <input id="search-form" type="text" aria-label="Search bar" class="header__searchQuery"
+                placeholder="Search...">
+            <!-- <label for="search-submit">search button</label> -->
+            <input id="search-submit" aria-label="Submit" type="submit" class="search-submit" value="Search" onclick="TheFunction()" >
+        </form>
+        <nav class="header__topNav">
+            <a href="All Games.html" class="header__topNav__navlink header__topNav__navlink--bold"><b>All Games</b></a>
+            <a href="Popular.html" class="header__topNav__navlink ">Popular</a>
+            <a href="About us.html" class="header__topNav__navlink ">About Us</a>
+            <a href="Contact us.html" class="header__topNav__navlink ">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__mainform">
+            <form name="contact" class="main__mainform__Contact_form" onsubmit="return validateForms()">
+                <fieldset class="main__mainform__field">
+                    <legend>
+                        <h1>Contact Us:</h1>
+                    </legend>
+                    <!-- <label for="name">Name: </label> -->
+                    <input class="main__mainform__Contact_form__input main__mainform__Contact_form__input--required " name="name" type="text" id="name" aria-label="text" placeholder="*Name" required><br>
+                    <!-- <label for="email">Email: </label> -->
+                    <input class="main__mainform__Contact_form__input main__mainform__Contact_form__input--required" name="email" type="email" id="email" aria-label="text" placeholder="*Email" required><br>
+                    <!-- <label for="feedback">Feedback: </label> -->
+                    <textarea class="main__mainform__Contact_form__input main__mainform__Contact_form__input--textbox" name="message" aria-label="feedback" id="feedback"
+                        placeholder="What can we help you with?"></textarea><br>
+                    <!-- text area size and spacing styling by css -->
+                    <input class="main__mainform__Contact_form__submit" type="submit" value="Submit" aria-label="Submit">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="main__contact_info">
+            <h2>or you can find us at:</h2>
+            <div class="main__contact_info__address">
+                <div class="main__contact_info__address__contact_item"><img class="main__contact_info__address__contact_item__img" src="./images/call.png" alt="Call icon" />+251923026900</div>
+                <div class="main__contact_info__address__contact_item"><img class="main__contact_info__address__contact_item__img" src="./images/email.png" alt="Email icon" />gaminghaven@gmail.com</div>
+                <div class="main__contact_info__address__contact_item"><img class="main__contact_info__address__contact_item__img" src="./images/Classic Filled.png" alt="Telegram icon" />@gaming-haven</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr class="footer__divider">
+        <img class="footer_logo" alt="Website Logo" src="./images/G-Haven.png" height="31" width="111" />
+        <nav class="footer__bottomNav">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Contact us.html">Contact</a><br>
+        </nav>
+        <span class="footer__copyright">@ 2022 GAMING-HAVEN.net All Rights Reserved.</span>
+    </footer>
+</body>
+
+</html>

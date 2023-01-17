@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all_games.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="header__homeButton header__homeButton--hover">GAMING-HAVEN.NET</a>
+        <form role="search" method="GET" class="header__search"  >
+            <!-- <label for="search-form">search for: </label> -->
+            <input id="search-form" type="text" aria-label="Search bar" class="header__searchQuery"
+                placeholder="Search...">
+            <!-- <label for="search-submit">search button</label> -->
+            <input id="search-submit" aria-label="Submit" type="submit" class="search-submit" value="Search" onclick="TheFunction()" >
+        </form>
+        <nav class="header__topNav">
+            <a href="All Games.html" class="header__topNav__navlink header__topNav__navlink--bold"><b>All Games</b></a>
+            <a href="Popular.html" class="header__topNav__navlink ">Popular</a>
+            <a href="About us.html" class="header__topNav__navlink ">About Us</a>
+            <a href="Contact us.html" class="header__topNav__navlink ">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mainList">
+            <h1>All posts</h1>
+            <ul class="mainList__list">
+                <li class="mainList__list__li"><a  class="mainList__list__li__link" href="./Persona 5.html">Persona 5</a></li>
+                <li class="mainList__list__li"><a  class="mainList__list__li__link" href="./Super Mario Odyssey.html">Super Mario Odyssey</a></li>
+                <li class="mainList__list__li"><a class="mainList__list__li__link" >AfterParty(coming soon)</a></li>
+                <li class="mainList__list__li"><a  class="mainList__list__li__link" href="./God of war.html">God of War(2018)</a></li>
+            </ul>
+        </div>
+
+        <div class="pagination">
+            <!-- previous,current,next, ... , last, next -->
+            <a href="./All Games.html" class="pagination__pageNumbers">1</a>
+            <a>2</a>
+            <span style="margin-right: 15px;">...</span>
+            <a class="pagination__pageNumbers">4</a>
+            <a class="pagination__pageNumbers">Next</a>
+        </div>
+    </main>
+
+    <footer>
+        <hr class="footer__divider">
+        <img class="footer_logo" alt="Website Logo" src="./images/G-Haven.png" height="31" width="111" />
+        <nav class="footer__bottomNav">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Contact us.html">Contact</a><br>
+        </nav>
+        <span class="footer__copyright">@ 2022 GAMING-HAVEN.net All Rights Reserved.</span>
+    </footer>
+</body>
+
+</html>
