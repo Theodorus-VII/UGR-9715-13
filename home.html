@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="./homepage.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="header__homeButton header__homeButton--hover">GAMING-HAVEN.NET</a>
+        <form role="search" method="get" required class="header__search">
+            <!-- <label for="search-form">search for: </label> -->
+            <input type="text" aria-label="Search bar" id="search-form" class="header__searchQuery"
+                placeholder="Search...">
+            <!-- <label for="search-submit">search button</label> -->
+            <input id="search-submit" aria-label="Submit" type="submit" class="search-submit" value="Search" onclick="TheFunction()" >
+        </form>
+        <nav class="header__topNav">
+            <a href="All Games.html" class="header__topNav__navlink header__topNav__navlink--bold"><b>All Games</b></a>
+            <a href="Popular.html" class="header__topNav__navlink ">Popular</a>
+            <a href="About us.html" class="header__topNav__navlink ">About Us</a>
+            <a href="Contact us.html" class="header__topNav__navlink ">Contact</a>
+        </nav>
+    </header>
+
+
+    <div class="new">
+        <div class="new__Latest__Releases">
+            <h1>Latest Releases</h1>
+            <div class="new__Latest__Releases__slideshowContainer">
+                <a class="new__Latest__Releases__slideshowContainer__prev" onclick="plusSlides(-1)"> &#10094;</a>
+                <div class="new__Latest__Releases__slideshowContainer__image_container">
+                    <div class="new__Latest__Releases__slideshowContainer__image_container__mySlides fade"><a
+                            href="./Super Mario Odyssey.html"><img
+                                class="new__Latest__Releases__slideshowContainer__image_container__mySlides__slide"
+                                src="images/mario poster.png" alt="Super Mario Odyssey"></a></div>
+                    <div class="new__Latest__Releases__slideshowContainer__image_container__mySlides fade"><a
+                            href="./Super Mario Odyssey.html"><img
+                                class="new__Latest__Releases__slideshowContainer__image_container__mySlides__slide"
+                                src="images/mario poster.png" alt="Super Mario Odyssey"></a></div>
+                    <div class="new__Latest__Releases__slideshowContainer__image_container__mySlides fade"><a
+                            href="./Super Mario Odyssey.html"><img
+                                class="new__Latest__Releases__slideshowContainer__image_container__mySlides__slide"
+                                src="images/mario poster.png" alt="Super Mario Odyssey"></a></div>
+                    <div class="new__Latest__Releases__slideshowContainer__image_container__mySlides fade"><a
+                            href="./Super Mario Odyssey.html"><img
+                                class="new__Latest__Releases__slideshowContainer__image_container__mySlides__slide"
+                                src="images/mario poster.png" alt="Super Mario Odyssey" height="422.4"
+                                width="316.8"></a></div>
+                    <div class="new__Latest__Releases__slideshowContainer__image_container__mySlides fade"><a
+                            href="./God of war.html"><img
+                                class="new__Latest__Releases__slideshowContainer__image_container__mySlides__slide"
+                                src="images/God of war.png" alt="God of War" height="352" width="264"></a></div>
+                    <div class="new__Latest__Releases__slideshowContainer__image_container__mySlides fade"><a
+                            href="./Persona 5.html"><img
+                                class="new__Latest__Releases__slideshowContainer__image_container__mySlides__slide"
+                                src="images/p5 poster.png" alt="Persona 5" height="352" width="264"></a></div>
+                    <div class="new__Latest__Releases__slideshowContainer__image_container__mySlides fade"><a><img
+                                class="new__Latest__Releases__slideshowContainer__image_container__mySlides__slide"
+                                src="./images/afterparty poster.png" alt="Afterparty poster" href="" height="352"
+                                width="264"></a></div>
+                </div>
+                <a class="new__Latest__Releases__slideshowContainer__next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+
+        <div class="new__trending">
+            <h2>Trending</h2>
+            <ul>
+                <li class="new__trending__li"><a class="new__trending__li__link" href="./God of war.html">God of War</a>
+                </li>
+                <li class="new__trending__li"><a class="new__trending__li__link" href="./Super Mario Odyssey.html">Super
+                        Mario Odyssey</a></li>
+                <li class="new__trending__li"><a class="new__trending__li__link" href="./Persona 5.html">Persona 5</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="body__divider">
+
+    <section class="main">
+        <div class="main__posts">
+            <div class="main__posts__Post">
+                <a href="./God of war.html"><img class="main__posts__Post__img" src="images/God of war.png"
+                        alt="God of War" height="352" width="264"></a>
+                <p class="main__posts__Post__description">
+                    <b>Description</b><br>
+                    God of War is the sequel to God of War III as well as a continuation of the canon God of War
+                    chronology. Unlike previous installments, this game focuses on Norse mythology and follows an older
+                    and more seasoned Kratos and his son Atreus in the years since the third game. It is in this harsh,
+                    unforgiving world that he must fight to survive… and teach his son to do the same.<br>
+                    <a href="./God of war.html" class="main__posts__Post__description__read">Read More</a>
+                </p>
+
+            </div>
+            <div class="main__posts__Post">
+                <a href="./Super Mario Odyssey.html"><img class="main__posts__Post__img" src="./images/mario poster.png"
+                        alt="Super Mario Odyssey" height="352" width="264"></a>
+                <p class="main__posts__Post__description">
+                    <b>Description</b><br>
+                    Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on
+                    a massive, globe-trotting 3D adventure. Use amazing new abilities, like the power to capture and
+                    control objects, animals, and enemies to collect Power Moons so you can power up the Odyssey airship
+                    and save Princess Peach from Bowser wedding plans!<br>
+                    <a href="./Super Mario Odyssey.html" class="main__posts__Post__description__read">Read More</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <hr class="footer__divider">
+        <img class="footer_logo" alt="Website Logo" src="./images/G-Haven.png" height="31" width="111" />
+        <nav class="footer__bottomNav">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Contact us.html">Contact</a><br>
+        </nav>
+        <span class="footer__copyright">@ 2022 GAMING-HAVEN.net All Rights Reserved.</span>
+    </footer>
+
+</body>
+
+</html>

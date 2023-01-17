@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_content.css">
+    <title>Persona 5</title>
+    <script src="./homepage.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="header__homeButton header__homeButton--hover">GAMING-HAVEN.NET</a>
+        <form role="search" method="GET" class="header__search"  >
+            <!-- <label for="search-form">search for: </label> -->
+            <input id="search-form" type="text" aria-label="Search bar" class="header__searchQuery"
+                placeholder="Search...">
+            <!-- <label for="search-submit">search button</label> -->
+            <input id="search-submit" aria-label="Submit" type="submit" class="search-submit" value="Search" onclick="TheFunction()" >
+        </form>
+        <nav class="header__topNav">
+            <a href="All Games.html" class="header__topNav__navlink header__topNav__navlink--bold"><b>All Games</b></a>
+            <a href="Popular.html" class="header__topNav__navlink ">Popular</a>
+            <a href="About us.html" class="header__topNav__navlink ">About Us</a>
+            <a href="Contact us.html" class="header__topNav__navlink ">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__image-container">
+            <img class="main__Game-background-art" src="images/wallpapersden.com_protagonist-persona-5-art_4096x1560.jpg"
+                width="100%" alt="main__Game-background-art" />
+        </div>
+        <section class="main__wrapper">
+            <div class="main__wrapper__heading">
+                <img class="main__wrapper__heading__poster" src="images/p5 poster.png" width="264" alt="Game poster" />
+                <div class="main__wrapper__heading__title">
+                    <h1>Persona 5</h1>
+                    <h2>September 15, 2016</h2>
+                </div>
+                <div class="main__wrapper__heading__description">
+                    <h3>Description and overview</h3>
+                    <p>Persona 5, a turn-based JRPG with visual novel elements, follows a high school student with a
+                        criminal record for a crime he didn't commit. Soon he meets several characters who share similar
+                        fates to him, and discovers a metaphysical realm which allows him and his friends to channel
+                        their
+                        pent-up frustrations into becoming a group of vigilantes reveling in aesthetics and rebellion
+                        while
+                        fighting corruption.</p>
+                </div>
+            </div>
+
+            <div class="main__wrapper__General_Information">
+                <div class="main__wrapper__General_Information__Table">
+                    <h3>General Information</h4>
+                        <table class="main__wrapper__General_Information__Table__table" border="solid black">
+                            <tr>
+                                <th>Title</th>
+                                <td>Persona 5</td>
+                            </tr>
+                            <tr>
+                                <th>Release Date</th>
+                                <td>2016</td>
+                            </tr>
+                            <tr>
+                                <th>Genre</th>
+                                <td><abbr title="Japanese Role Playing Game">JRPG</abbr><br>
+                                    Adventure
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Platform</th>
+                                <td>
+                                    <abbr title="Play Station 4">PS4<br></abbr>
+                                    <abbr title="Play Station 5">PS5<br></abbr>
+                                    <abbr title="Personal Computer">PC</abbr><br>
+                                    Nintendo Switch
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Franchise</th>
+                                <td><a href="https://en.wikipedia.org/wiki/Persona_(series)">Persona</a></td>
+                            </tr>
+                            <tr>
+                                <th>Ratings</th>
+                                <td><a href="https://www.ign.com/articles/2017/03/29/persona-5-review">IGN:
+                                        9.7/10</a><br>
+                                    <a href="https://www.gamespot.com/reviews/persona-5-review/1900-6416640/">Gamespot:
+                                        9/10</a>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+                <div class="Store_links">
+                    <h4>Available On</h4>
+                    <a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/">Steam</a>
+                    <a href="https://store.playstation.com/en-us/product/UP2611-CUSA05877_00-PERSONA512345678"><abbr
+                            title="Play Station Network">PSN</a>
+                </div>
+        </section>
+
+        <section class="main__media">
+            <div class="main__media__screenshots">
+                <h4>Screenshots</h4>
+                <img class="main__media__screenshots__img" src="images/p5 sc1.jpg" height="240" width="426.5" alt="screenshot 1" />
+                <img class="main__media__screenshots__img" src="images/p5 sc2.jpg" height="240" width="426.5" alt="screenshot 2" />
+                <img class="main__media__screenshots__img" src="images/p5 sc3.jpg" height="240" width="426.5" alt="screenshot 3" />
+                <img class="main__media__screenshots__img" src="images/p5 sc4.jpg" height="240" width="426.5" alt="screenshot 4" />
+                <img class="main__media__screenshots__img" src="images/p5 sc5.jpg" height="240" width="426.5" alt="screenshot 5" />
+            </div>
+            <div class="main__media__media_players">
+                <div class="main__media__media_players__trailer">
+                    <h4>Official Trailer</h4>
+                    <!-- <video controls>
+                    <source src="videos/Persona 5 - Launch Trailer - PS4.mp4" alt="official trailer">
+                </video> -->
+                    <iframe class="main__media__media_players__trailer__iframe" src="https://www.youtube.com/embed/QnDzJ9KzuV4"
+                        title="Persona 5 | Launch Trailer | PS4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="main__media__media_players__soundtrack">
+                    <h4>Score</h4>
+                    <h5>Main Soundtrack Theme</h5>
+                    <audio controls>
+                        <source src="audio/Persona 5 - Wake Up, Get up, Get Out There (128kbit_AAC).mp3"
+                            type="audio/mp3">
+                        <track src="./audio/Persona 5 - Wake Up, Get up, Get Out There.vtt" kind="captions" srclang="en"
+                            label="english">
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr class="footer__divider">
+        <img class="footer_logo" alt="Website Logo" src="./images/G-Haven.png" height="31" width="111" />
+        <nav class="footer__bottomNav">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Contact us.html">Contact</a><br>
+        </nav>
+        <span class="footer__copyright">@ 2022 GAMING-HAVEN.net All Rights Reserved.</span>
+    </footer>
+</body>
+
+</html>
