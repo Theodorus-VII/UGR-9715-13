@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.bundle.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-white">
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-md-between justify-content-sm-evenly">
+            <div class="nav-link h-logo text-center p-3 bg-dark border-dark">
+                <a href="index.html" class="nav-link">GAMING-HAVEN.NET</a>
+            </div>
+
+            <form class="d-flex" action="Search.html">
+                <!-- <label for="search-form">search for: </label> -->
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search bar">
+                <!-- <label for="search-submit">search button</label> -->
+                <button class="btn text-bg-dark btn-outline-primary" aria-label="Submit" type="submit" onclick="TheFunction()">Search</button>
+              </form>
+
+
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark"">
+            <div class=" navbar-nav container-fluid justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-3">
+                    <a href="All Games.html" class="nav-link "><b>All Games</b></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="Popular.html" class="nav-link ">Popular</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="About us.html" class="nav-link ">About Us</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="Contact us.html" class="nav-link ">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="flex-column align-items-stretch px-md-4">
+        <div class="d-flex flex-wrap">
+            <div class="container col-md-6 p-4 my-3 bg-dark my_carousel">
+                <h1 class="text-bg-dark ms-5 mb-3 h2">Latest Releases</h1>
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner bg-gradient flex-row" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <a href="./Super Mario Odyssey.html"><img class="p-2 img-fluid"
+                                            src="./images/mario poster.png" alt="Super Mario Odyssey" height="352"
+                                            width="264"></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a><img class="p-2 img-fluid" src="./images/afterparty poster.png"
+                                            alt="Afterparty poster" href="" height="352" width="264"><span class="text-opacity-50 text-light">Coming Soon</span></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="./Persona 5.html"><img class="p-2 img-fluid" src="images/p5 poster.png"
+                                            alt="Persona 5" height="352" width="264"></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="./God of war.html"><img class="p-2 img-fluid" src="images/God of war.png"
+                                            alt="God of War" height="352" width="264"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev bg-dark w-auto" href="#recipeCarousel" role="button"
+                            data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </div>
+                        <div class="carousel-control-next bg-dark w-auto" href="#recipeCarousel" role="button"
+                            data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </div>
+                    </div>
+                </div>
+                <script>
+                    let items = document.querySelectorAll('.carousel .carousel-item');
+
+                    items.forEach((el) => {
+                        const minPerSlide = 4;
+                        let next = el.nextElementSibling;
+                        for (var i = 1; i < minPerSlide; i++) {
+                            if (!next) {
+                                // wrap carousel by using first child
+                                next = items[0];
+                            }
+                            let cloneChild = next.cloneNode(true);
+                            el.appendChild(cloneChild.children[0]);
+                            next = next.nextElementSibling;
+                        }
+                    })
+                </script>
+            </div>
+
+
+            <div class="container col-md-3 bg-light p-4 trending">
+                <h2 class="ms-3">Trending</h2>
+                <ul class="list-group pb-5">
+                    <li class="list-group-item list-group-item-action"><a class="nav-link p-2"
+                            href="./God of war.html">God of War</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action"><a class="nav-link p-2"
+                            href="./Super Mario Odyssey.html">Super
+                            Mario Odyssey</a></li>
+                    <li class="list-group-item list-group-item-action"><a class="nav-link p-2"
+                            href="./Persona 5.html">Persona 5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="hr">
+
+        <section class="container-fluid p-0">
+            <div class="container-fluid border bg-light border-primary p-0 m-0">
+                <div class="card m-3 shadow-1-strong justify-content-center">
+                    <div class="row g-0 col-md-12 mt-4 mb-4 me-0 ms-2">
+                        <div class="col-md-2 m-0">
+                            <a href="./God of war.html"><img class="p-2 border float-end img-fluid" src="images/God of war.png"
+                                    alt="God of War" height="352" width="264"></a>
+                        </div>
+                        <div class="col-md-9 container-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Description</h5>
+                                <p class="card-text">God of War is the sequel to God of War III as well as a
+                                    continuation of
+                                    the canon God of War
+                                    chronology. Unlike previous installments, this game focuses on Norse mythology and
+                                    follows an older
+                                    and more seasoned Kratos and his son Atreus in the years since the third game. It is
+                                    in
+                                    this harsh,
+                                    unforgiving world that he must fight to survive… and teach his son to do the same.
+                                </p>
+                                <p class="card-text"><small class="text-muted"><a href="./God of war.html"
+                                            class="main__posts__Post__description__read">Read More</a></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-3 shadow-1-strong justify-content-center">
+                    <div class="row g-0 col-md-12 mt-4 me-0 ms-2 mb-4">
+                        <div class="col-md-2 m-0">
+                            <a href="./Super Mario Odyssey.html"><img class="p-2 border float-end img-fluid"
+                                    src="./images/mario poster.png" alt="Super Mario Odyssey" height="352"
+                                    width="264"></a>
+                        </div>
+                        <div class="col-md-9 container-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Description</h5>
+                                <p class="card-text">Explore incredible places far from the Mushroom Kingdom as you join
+                                    Mario and his new ally Cappy on
+                                    a massive, globe-trotting 3D adventure. Use amazing new abilities, like the power to
+                                    capture and
+                                    control objects, animals, and enemies to collect Power Moons so you can power up the
+                                    Odyssey airship
+                                    and save Princess Peach from Bowser wedding plans!
+                                </p>
+                                <p class="card-text"><small class="text-muted"><a href="./God of war.html"
+                                            class="main__posts__Post__description__read">Read More</a></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid text-bg-light m-0 shadow flex-column">
+            <hr class="">
+            <div class="container-fluid d-flex flex-wrap">
+                <div class="col-md-2 float-start container">
+                    <img class="float-start" alt="Website Logo" src="./images/G-Haven.png" height="31" width="111" />
+                </div>
+                <nav
+                    class="navbar-expand-sm container col-md-8 m-0 container d-flex justify-content-center align-self-center bg-light">
+                    <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="index.html">Home</a>
+                    <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="About us.html">About Us</a>
+                    <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="Contact us.html">Contact</a><br>
+                </nav>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span class="text-center"><small>@ 2022 GAMING-HAVEN.net All Rights Reserved.</small></span>
+            </div>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.bundle.js"></script>
+    <title>Contact</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header class="container-fluid bg-dark text-white">
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-md-between justify-content-sm-evenly">
+            <div class="nav-link h-logo text-center p-3 bg-dark border-dark">
+                <a href="index.html" class="nav-link">GAMING-HAVEN.NET</a>
+            </div>
+
+             <form class="d-flex" action="Search.html">
+                <!-- <label for="search-form">search for: </label> -->
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search bar">
+                <!-- <label for="search-submit">search button</label> -->
+                <button class="btn text-bg-dark btn-outline-primary" aria-label="Submit" type="submit" onclick="TheFunction()">Search</button>
+              </form>
+
+
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark"">
+            <div class=" navbar-nav container-fluid justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-3">
+                    <a href="All Games.html" class="nav-link "><b>All Games</b></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="Popular.html" class="nav-link ">Popular</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="About us.html" class="nav-link ">About Us</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="Contact us.html" class="nav-link ">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid d-flex flex-wrap align-items-center mt-5 justify-content-center flex-shrink-0">
+        <div class="m-3 w-75 text-bg-light container-fluid col-6 p-4 rounded shadow"  style="min-width: 319px; max-width: 1100px;">
+            <form name="contact" class="mb-3 container-fluid was-validated" onsubmit="return validateForms()">
+                <fieldset class="form-control d-flex flex-column justify-content-center align-items-center" style=" min-height: 500px;">
+                    <legend>
+                        <h1>Contact Us:</h1>
+                    </legend>
+                    <!-- <label for="name">Name: </label> -->
+                    <input class="form-control" name="name" type="text" id="name" aria-label="text" placeholder="*Name" required><br>
+                    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+                    <!-- <label for="email">Email: </label> -->
+                    <input class="form-control" name="email" type="email" id="email" aria-label="text" placeholder="*Email" required><br>
+                    <!-- <label for="feedback">Feedback: </label> -->
+                    <textarea class="form-control" rows="5" name="message" aria-label="feedback" id="feedback"
+                        placeholder="What can we help you with?"></textarea><br>
+                    <!-- text area size and spacing styling by css -->
+                    <input class="btn btn-dark mb-3 ms-2 w-50" type="submit" value="Submit" aria-label="Submit">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="container text-bg-dark p-4 p-lg-5 m-lg-0 my-lg-5 mx-lg-4 w-50 col-4 rounded shadow" style="min-width: 319px; max-width: 600px;">
+            <h2>or you can find us at:</h2>
+            <div class="main__contact_info__address">
+                <div class="d-flex container-fluid align-items-center flex-wrap text-bg-light mt-1 mb-1 rounded p-0"><img class="img-thumbnail p-1 m-2 mt-1 mb-1" src="./images/call.png" alt="Call icon" /><span class="text-wrap">+251923026900</span></div>
+                <div class="d-flex container-fluid align-items-center flex-wrap text-bg-light mt-1 mb-1 rounded p-0"><img class="img-thumbnail p-1 m-2 mt-1 mb-1" src="./images/email.png" alt="Email icon" /><span class="text-wrap">gaminghaven@gmail.com</span></div>
+                <div class="d-flex container-fluid align-items-center flex-wrap text-bg-light mt-1 mb-1 rounded p-0"><img class="img-thumbnail p-1 m-2 mt-1 mb-1" src="./images/Classic Filled.png" alt="Telegram icon" /><span class="text-wrap">@gaming-haven</span></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid mt-auto py-3 text-bg-light m-0 shadow flex-column">
+        <hr class="">
+        <div class="container-fluid d-flex flex-wrap">
+            <div class="col-md-2 float-start container">
+                <img class="float-start" alt="Website Logo" src="./images/G-Haven.png" height="31" width="111" />
+            </div>
+            <nav
+                class="navbar-expand-sm container col-md-8 m-0 container d-flex justify-content-center align-self-center bg-light">
+                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="index.html">Home</a>
+                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="About us.html">About Us</a>
+                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="Contact us.html">Contact</a><br>
+            </nav>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <span class="text-center"><small>@ 2022 GAMING-HAVEN.net All Rights Reserved.</small></span>
+        </div>
+    </footer>
+</body>
+
+</html>

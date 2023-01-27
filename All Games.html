@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.bundle.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header class="container-fluid bg-dark text-white">
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-md-between justify-content-sm-evenly">
+            <div class="nav-link h-logo text-center p-3 bg-dark border-dark">
+                <a href="index.html" class="nav-link">GAMING-HAVEN.NET</a>
+            </div>
+
+             <form class="d-flex" action="Search.html">
+                <!-- <label for="search-form">search for: </label> -->
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search bar">
+                <!-- <label for="search-submit">search button</label> -->
+                <button class="btn text-bg-dark btn-outline-primary" aria-label="Submit" type="submit" onclick="TheFunction()">Search</button>
+              </form>
+
+
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark"">
+            <div class=" navbar-nav container-fluid justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-3">
+                    <a href="All Games.html" class="nav-link "><b>All Games</b></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="Popular.html" class="nav-link ">Popular</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="About us.html" class="nav-link ">About Us</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="Contact us.html" class="nav-link ">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid col-md-12 flex-shrink-0">
+        <div class="container-fluid col-md-12 bg-light p-5">
+            <h1 class="ps-5 pb-1">All posts</h1>
+            <ul class="list-group pb-5 col-md-12">
+                <li class="list-group-item list-group-item-action col-md-12"><a  class="nav-link text-bg-light p-2 text-decoration-underline" href="./Persona 5.html">Persona 5</a></li>
+                <li class="list-group-item list-group-item-action col-md-12"><a  class="nav-link text-bg-light p-2 text-decoration-underline" href="./Super Mario Odyssey.html">Super Mario Odyssey</a></li>
+                <li class="list-group-item list-group-item-action col-md-12"><a class="nav-link text-bg-light p-2" >AfterParty(coming soon)</a></li>
+                <li class="list-group-item list-group-item-action col-md-12"><a  class="nav-link text-bg-light p-2 text-decoration-underline" href="./God of war.html">God of War(2018)</a></li>
+            </ul>
+        </div>
+
+        <div class="pagination d-flex justify-content-center ">
+            <!-- previous,current,next, ... , last, next -->
+            <a href="./All Games.html" class="page-link me-2 rounded">1</a>
+            <a class="page-link me-2 rounded">2</a>
+            <span class="pe-4 ps-2">...</span>
+            <a class="page-link me-2 rounded">4</a>
+            <a class="page-link me-2 rounded">Next</a>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 container-fluid mt-auto py-3 text-bg-light m-0 shadow flex-column">
+        <hr class="">
+        <div class="container-fluid d-flex flex-wrap">
+            <div class="col-md-2 float-start container">
+                <img class="float-start" alt="Website Logo" src="./images/G-Haven.png" height="31" width="111" />
+            </div>
+            <nav
+                class="navbar-expand-sm container col-md-8 m-0 container d-flex justify-content-center align-self-center bg-light">
+                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="index.html">Home</a>
+                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="About us.html">About Us</a>
+                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="Contact us.html">Contact</a><br>
+            </nav>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <span class="text-center"><small>@ 2022 GAMING-HAVEN.net All Rights Reserved.</small></span>
+        </div>
+    </footer>
+</body>
+
+</html>
