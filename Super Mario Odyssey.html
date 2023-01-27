@@ -8,7 +8,6 @@
     <link href="bootstrap.css" rel="stylesheet">
     <script src="bootstrap.bundle.js"></script>
     <title>Super Mario Odyssey</title>
-    <script src="./homepage.js"></script>
     <style>
         .nav-link {
             box-shadow: inset 0 0 0 0 #ddd;
@@ -128,8 +127,9 @@
                         </tr>
                         <tr>
                             <th class="main__wrapper__General_Information__Table__table__data">Franchise</th>
-                            <td class="main__wrapper__General_Information__Table__table__data nav-link"><a  class="nav-link"
-                                    href="https://en.wikipedia.org/wiki/Super_Mario">Super Mario</a></td>
+                            <td class="main__wrapper__General_Information__Table__table__data nav-link"><a
+                                    class="nav-link" href="https://en.wikipedia.org/wiki/Super_Mario">Super Mario</a>
+                            </td>
                         </tr>
                         <tr>
                             <th class="main__wrapper__General_Information__Table__table__data">Ratings</th>
@@ -152,9 +152,9 @@
             </div>
         </section>
 
-        <section class="container-fluid text-bg-dark d-flex flex-column flex-wrap py-4 px-md-4 shadow rounded">
-            <h4>Screenshots</h4>
-            <div class="main__media__screenshots d-flex">
+        <section class="container-fluid text-bg-dark d-flex flex-wrap py-4 px-md-4 shadow rounded">
+            <div class="main__media__screenshots">
+                <h4>Screenshots</h4>
                 <img class="img-fluid my-2" src="./images/mario sc1.jpg" alt="screenshot 1" width="427" height="240" />
                 <img class="img-fluid my-2" src="./images/mario sc2.jpg" alt="screenshot 2" width="427" height="240" />
                 <img class="img-fluid my-2" src="./images/mario sc3.jpg" alt="screenshot 3" width="427" height="240" />
@@ -163,14 +163,15 @@
             <div class="main__media__media_players">
                 <div class="main__media__media_players__trailer">
                     <h4>Official Trailer</h4>
-                    <!-- <video width="470" alt="official trailer" controls>
-                    <source src="videos/Super Mario Odyssey - Nintendo Switch Presentation 2017 Trailer.mp4">
-                    </video> -->
-                    <iframe class="main__media__media_players__trailer__iframe"
+                    <video class="w-100" alt="official trailer" controls>
+                        <source src="videos/Sample Videos _ Dummy Videos For Demo Use.mp4">
+                        </video>
+                        <span>(sample)</span>
+                        <!-- <iframe class="main__media__media_players__trailer__iframe"
                         src="https://www.youtube.com/embed/5kcdRBHM7kM"
                         title="Super Mario Odyssey - Nintendo Switch Presentation 2017 Trailer" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
                 <div class="main__media__media_players__soundtrack">
                     <h4>Score</h4>
@@ -195,7 +196,8 @@
             </div>
             <nav
                 class="navbar-expand-sm container col-md-8 m-0 container d-flex justify-content-center align-self-center bg-light">
-                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded" href="index.html">Home</a>
+                <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded"
+                    href="index.html">Home</a>
                 <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded"
                     href="About us.html">About Us</a>
                 <a class="ps-3 pe-3 pt-1 pb-1 ms-1 me-1 nav-link text-bg-light shadow rounded"
